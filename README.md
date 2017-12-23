@@ -8,7 +8,7 @@ to understanding the essence of the main cryptographic algorithms.
 Some of the implemented algorithms are:
 * [AES](https://en.wikipedia.org/wiki/SHA-3)
 * [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-* [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy)
+* [Hybrid](https://en.wikipedia.org/wiki/Hybrid_cryptosystem)
 * [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
 
 All code is written in python 3.5. It's only dependency is numpy, to install do:
@@ -38,13 +38,14 @@ message with it, making it only readable to the holder of the private key (Bob).
 
 ### Hybrid
 
-A hybrid system is the combination of an asymmetric cipher, which is able to distribute
-send messages privately (slow), and a symmetric cipher, which is able to encrypt messages
-securely very fast. The most well-known implementation of protocol is PGP. But, to get a
-generic understanding, the implemented version would be more than enough.
+A hybrid system is the combination of an asymmetric cipher, which is able to send messages
+through open channels privately (slow), and a symmetric cipher, which is able to encrypt
+messages securely very fast. The most well-known implementation of this protocol is PGP.
+This implementation is not pure PGP, despite being very similar to it, it's an example
+of a hybrid cryptographic protocol.
 
 
 ### SHA-1 (Secure Hash Algorithm)
 
-SHA-1 is a cryptographic hash function which takes an input and products a 20-byte hash value.
-SHA-1 is currently not secure, but it's the base of most hashing algorithms.
+SHA-1 is a cryptographic hash function that takes an input of any size and products a 20-byte
+hash sum. SHA-1 is currently not secure, but it's the base of most hashing algorithms.
