@@ -10,7 +10,6 @@ Some of the implemented algorithms are:
 * [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 * [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy)
 * [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
-* [SHA-3](https://en.wikipedia.org/wiki/SHA-3)
 
 All code is written in python 3.5. It's only dependency is numpy, to install do:
 > $ pip3 install numpy
