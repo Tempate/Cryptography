@@ -3,23 +3,23 @@
 This project is meant to be a readable implementation of some of the most important cryptographic
 algorithms.
 This project is not meant to be used as a reliable source of encryption, but rather as a guide
-on how certain cryptographic algorithm works.
+to understanding the essence of the main cryptographic algorithms.
 
 Some of the implemented algorithms are:
-    * [AES](https://en.wikipedia.org/wiki/SHA-3)
-    * [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-    * [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy)
-    * [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
-    * [SHA-3](https://en.wikipedia.org/wiki/SHA-3)
+* [AES](https://en.wikipedia.org/wiki/SHA-3)
+* [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+* [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy)
+* [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
+* [SHA-3](https://en.wikipedia.org/wiki/SHA-3)
 
 All code is written in python 3.5. It's only dependency is numpy, to install do:
-> pip3 install numpy
+> $ pip3 install numpy
 
 To run do:
-> python3 main.py -a <algorithm> --msg="Message to encrypt"
+> $ python3 main.py -a <algorithm> --msg="Message to encrypt"
 
 
-#### AES (Advanced Encryption Standard)
+### AES (Advanced Encryption Standard)
 
 AES is a subset of the Rijndael cipher. It's a symmetric key cipher based on a
 substitution-permutation network design. It has a block size of 128 bits and a
@@ -28,7 +28,7 @@ Operations are performed in a finite field known as Galois' Field. In it, additi
 substraction are xor and multiplication is a "specific" polynomial multiplication.
 
 
-#### RSA (Rivest-Shamir-Adleman)
+### RSA (Rivest-Shamir-Adleman)
 
 RSA is an asymmetric cryptographic protocol that is based on the difficulty of
 factorizing the product of two large primes.
@@ -37,7 +37,7 @@ By publicly sharing one of them (public key), a sender (Alice) can encrypt a
 message with it, making it only readable to the holder of the private key (Bob).
 
 
-#### Hybrid
+### Hybrid
 
 A hybrid system is the combination of an asymmetric cipher, which is able to distribute
 send messages privately (slow), and a symmetric cipher, which is able to encrypt messages
